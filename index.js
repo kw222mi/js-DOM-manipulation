@@ -48,8 +48,8 @@ let instructionItems = instructionsList.getElementsByTagName('li')
 let instructionsArray = []
 // Iterate through each instruction item and create an object
   for (let i = 0; i < instructionItems.length; i++) {
-    let order = i + 1; // Adding 1 to start the order from 1
-    let text = instructionItems[i].textContent.trim(); // Trim to remove leading/trailing whitespaces
+    let order = i + 1 // Adding 1 to start the order from 1
+    let text = instructionItems[i].textContent.trim() // Trim to remove leading/trailing whitespaces
     // Create an object and push it to the array
     let instructionObject = { order: order, text: text }
     instructionsArray.push(instructionObject)
